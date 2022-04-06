@@ -1,0 +1,52 @@
+{
+  "name": "hafbuy",
+  "version": "1.0.0",
+  "description": "Tienda Online de Hafbuy.com",
+  "author": "Alexis Sniffer",
+  "private": true,
+  "scripts": {
+    "develop": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "@nuxt/types": "^2.15.8",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/style-resources": "^1.2.1",
+    "@nuxtjs/vuetify": "^1.12.3",
+    "@popperjs/core": "^2.11.2",
+    "bootstrap": "^5.1.3",
+    "cookie-universal-nuxt": "^2.1.5",
+    "cookieparser": "^0.1.0",
+    "imagesloaded": "^4.1.4",
+    "js-cookie": "^3.0.1",
+    "moment": "^2.29.1",
+    "nuxt": "^2.15.8",
+    "nuxt-i18n": "^6.28.1",
+    "swiper": "^5.2.0",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-image-lightbox": "^7.2.0",
+    "vue-image-zoom": "^1.0.6",
+    "vue-images-loaded": "^1.1.2",
+    "vue-infinite-scroll": "^2.0.2",
+    "vue-js-modal": "^2.0.1",
+    "vue-lazyload": "^1.3.3",
+    "vue-notification": "^1.3.20",
+    "vue-nouislider": "^1.0.1",
+    "vue-range-slider": "^0.6.0",
+    "vue-slide-toggle": "^1.1.1",
+    "vue-sticky-directive": "0.0.10",
+    "vue-tree-list": "^1.5.0",
+    "vue2-google-maps": "^0.10.7",
+    "vueisotope": "^3.1.2",
+    "vuelidate": "^0.7.7",
+    "vuex-persistedstate": "^4.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "prettier": "^2.5.1",
+    "sass": "^1.49.7",
+    "sass-loader": "^10.2.1"
+  }
+}
