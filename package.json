@@ -7,7 +7,7 @@
   "scripts": {
     "develop": "nuxt",
     "build": "nuxt build",
-    "do": "rm -rf node_modules & npm install --force & nuxt build",
+    "do": "rm -rf node_modules & npm install --force",
     "generate": "nuxt generate",
     "start": "nuxt start"
   },
