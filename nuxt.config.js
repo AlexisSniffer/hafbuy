@@ -52,8 +52,8 @@ export default {
   loading: false,
   loadingIndicator: false,
   pageTransition: 'page',
-  server: {
+  /*server: {
     port: 4000,
     host: 'localhost',
-  },
+  },*/
 }
