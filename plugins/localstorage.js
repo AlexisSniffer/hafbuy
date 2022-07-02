@@ -1,19 +1,19 @@
-import createPersistedState from 'vuex-persistedstate'
-import { currentDemo } from '~/api'
+import createPersistedState from 'vuex-persistedstate';
+import { currentDemo } from '~/api';
 
-export default function ({ store }) {
-  let storage = localStorage.getItem('porto-vue')
+export default function ( { store } ) {
+    let storage = localStorage.getItem( 'porto-vue' );
 
-  if (localStorage.currentDemo && localStorage.currentDemo != currentDemo) {
-    localStorage.clear()
-  }
+    if ( localStorage.currentDemo && localStorage.currentDemo != currentDemo ) {
+        localStorage.clear();
+    }
 
-  localStorage.setItem('currentDemo', currentDemo)
+    localStorage.setItem( 'currentDemo', currentDemo );
 
-  window.onNuxtReady(() => {
-    createPersistedState({
-      key: 'porto-vue',
-      paths: [],
-    })(store)
-  })
+    window.onNuxtReady( () => {
+        createPersistedState( {
+            key: 'porto-vue',
+            paths: []
+        } )( store )
+    } )
 }

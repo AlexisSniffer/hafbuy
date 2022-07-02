@@ -1,56 +1,61 @@
 <template>
-  <pv-carousel
-    class="info-boxes-slider swiper-carousel swiper-theme appear-animate"
-    data-animation-name="fadeInUpShorter"
-    data-animation-delay="200"
-    v-animate
-    :options="serviceSlider"
-  >
-    <div
-      class="info-box info-box-icon-left swiper-slide"
-      v-for="service in services"
-      :key="service.id"
-    >
-      <i class="text-primary" :class="service.attributes.icon"></i>
+	<pv-carousel
+		class="info-boxes-slider swiper-carousel swiper-theme appear-animate"
+		data-animation-name="fadeInUpShorter"
+		data-animation-delay="200"
+		v-animate
+		:options="serviceSlider"
+	>
+		<div class="info-box info-box-icon-left swiper-slide">
+			<i class="icon-shipping text-primary"></i>
 
-      <div class="info-box-content">
-        <h4>{{ service.attributes.title }}</h4>
+			<div class="info-box-content">
+				<h4>FREE SHIPPING &amp; RETURN</h4>
+				<p class="text-body">Free shipping on all orders over $99.</p>
+			</div>
+		</div>
 
-        <p class="text-body">{{ service.attributes.description }}</p>
-      </div>
-    </div>
-  </pv-carousel>
+		<div class="info-box info-box-icon-left swiper-slide">
+			<i class="icon-money text-primary"></i>
+
+			<div class="info-box-content">
+				<h4>MONEY BACK GUARANTEE</h4>
+				<p class="text-body">100% money back guarantee</p>
+			</div>
+		</div>
+
+		<div class="info-box info-box-icon-left swiper-slide">
+			<i class="icon-support text-primary"></i>
+
+			<div class="info-box-content">
+				<h4>ONLINE SUPPORT 24/7</h4>
+				<p class="text-body">Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>
+
+		<div class="info-box info-box-icon-left swiper-slide">
+			<i class="icon-password-lock text-primary"></i>
+
+			<div class="info-box-content">
+				<h4>SECURE PAYMENT</h4>
+				<p class="text-body">Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>
+	</pv-carousel>
 </template>
 
 <script>
-import PvCarousel from '~/components/features/PvCarousel'
-import { serviceSlider } from '~/utils/data/carousel'
-import API, { baseUrl } from '~/api'
+import PvCarousel from '~/components/features/PvCarousel';
+import { serviceSlider } from '~/utils/data/carousel';
 
 export default {
-  components: {
-    PvCarousel,
-  },
-  async mounted() {
-    const qs = require('qs')
-    const query = qs.stringify(
-      {},
-      {
-        encodeValuesOnly: true,
-      }
-    )
-
-    API.get(`${baseUrl}/api/services?${query}`)
-      .then((response) => {
-        this.services = response.data.data
-      })
-      .catch((error) => ({ error: JSON.stringify(error) }))
-  },
-  data() {
-    return {
-      serviceSlider: serviceSlider,
-      services: [],
-    }
-  },
-}
+	components: {
+		PvCarousel
+	},
+	data: function() {
+		return {
+			serviceSlider: serviceSlider
+		};
+	}
+};
 </script>
