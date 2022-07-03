@@ -1,16 +1,16 @@
-import axios from 'axios';
+import axios from 'axios'
 
-const baseDonmain = 'http://localhost:3000';
+const baseDonmain = 'http://localhost:3000'
 
 export const customHeader = {
-    'Content-Type': 'application/json',
-    Accept: 'application/json'
-};
+  'Content-Type': 'application/json',
+  Accept: 'application/json',
+}
 
-export const baseUrl = `${ baseDonmain }`;
-export const currentDemo = 36;
+export const baseUrl = `${baseDonmain}`
+export const currentDemo = 36
 
-export default axios.create( {
-    baseUrl,
-    headers: customHeader
-} )
+export default axios.create({
+  baseUrl,
+  headers: customHeader,
+})

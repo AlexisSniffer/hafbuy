@@ -106,7 +106,7 @@ export default {
   },
 
   build: {
-    publicPath: 'http://d-themes.com/vue/porto/demo-36/',
+    publicPath: 'vue/porto/demo-36/',
   },
 
   generate: {
@@ -121,7 +121,7 @@ export default {
   pageTransition: 'page',
 
   server: {
-    port: 4000,
+    port: 3000,
     host: 'localhost',
   },
 }
