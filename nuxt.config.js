@@ -100,7 +100,7 @@ export default {
   modules: ['@nuxtjs/axios'],
 
   router: {
-    base: '/vue/porto/demo-36/',
+    base: '/',
     linkActiveClass: '',
     linkExactActiveClass: 'active',
   },
