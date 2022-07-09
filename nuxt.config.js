@@ -106,7 +106,7 @@ export default {
   },
 
   build: {
-    publicPath: 'vue/porto/demo-36/',
+    publicPath: 'public/',
   },
 
   generate: {
